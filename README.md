@@ -35,9 +35,31 @@ Node.js & Express – for building the server and API
 
 ## Credits
 
-- List any third-party assets used in the project (e.g., sound effects, images, fonts) and provide proper attribution.
-- Acknowledge any resources, tutorials, or references you used to help complete the project.
+Fonts:
+
+Permanent Marker
+ – Google Fonts
+
+Aboreto
+ – Google Fonts
+
+Background Images: Any images you used (e.g., /images/background.jpg) – include source if not your own.
+
+Tutorials/References:
+
+TutsPlus Sticky Notes Tutorial
+
+CodePen example
+ for sticky note styling inspiration
+
+Libraries:
+
+Vanilla JS, HTML, CSS (no extra libraries besides Google Fonts)
 
 ## Future Enhancements
 
-- List any features you would’ve liked to add if given more time
+Add like buttons (hearts/stars) on sticky notes with a counter.
+
+Add the ability to delete wishes.
+
+Make sticky notes draggable again for interactivity.
