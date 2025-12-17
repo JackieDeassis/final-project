@@ -1,2 +1,54 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>New Year Wishes Wall</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+
+<body>
+<!-- INTRO SCREEN -->
+<div id="intro-screen">
+  <div class="sparkle-container"></div> <!-- Sparkles behind content -->
+  <div class="intro-content aboreto-regular">
+    <h1>New Year Wishes Wall</h1>
+    <p>
+      Leave an anonymous wish for the new year.
+      Read what others hope for and add your own to the wall.
+    </p>
+    <button id="enter-btn">Add Your Wish</button>
+  </div>
+</div>
+
+
+
+  <!-- MAIN CONTENT (HIDDEN AT FIRST) -->
+  <div id="main-content" class="hidden">
+
+    <!-- SUBMISSION FORM -->
+    <form id="wish-form">
+      <input 
+        type="text" 
+        id="wish-input" 
+        placeholder="Make a wish for the new year..."
+        required 
+      />
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- TIME-BASED FILTER -->
+    <div class="filters">
+      <button id="newest-btn">Newest</button>
+      <button id="oldest-btn">Oldest</button>
+    </div>
+
+    <!-- WISHES WALL -->
+    <div id="wishes-container"></div>
+
+  </div>
+
+  <!-- FRONTEND JS -->
+  <script src="/javascripts/script.js"></script>
+</body>
+</html>

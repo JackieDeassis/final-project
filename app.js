@@ -1,3 +1,6 @@
+require('dotenv').config();
+const mongoose = require('mongoose');
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -5,8 +8,18 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var wishRouter = require('./routes/wish'); // <-- added your wish routes
 
 var app = express();
+
+// Connect to MongoDB
+mongoose.connect(process.env.MONGO_URL)
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch((err) => {
+    console.error('Error connecting to MongoDB:', err);
+  });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,7 +31,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Routes
 app.use('/', indexRouter);
+app.use('/entries', wishRouter); // <-- connected here
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
