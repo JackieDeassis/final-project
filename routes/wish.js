@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const Wish = require('../models/wish'); // your Mongoose model
+const Wish = require('../models/wish'); // Mongoose model
 
 // ===========================
 // GET all wishes
