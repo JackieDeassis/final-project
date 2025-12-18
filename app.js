@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URL)
     console.log('Connected to MongoDB');
   })
   .catch((err) => {
-    console.error('Error connecting to MongoDB:', err);
+    console.log('Error connecting to MongoDB:', err);
   });
 
 // view engine setup
