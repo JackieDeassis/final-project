@@ -43,7 +43,7 @@ Permanent Marker
 Aboreto
  – Google Fonts
 
-Background Images: Any images you used (e.g., /images/background.jpg) – include source if not your own.
+Background Images: from google (/images/background.jpg) 
 
 Tutorials/References:
 
